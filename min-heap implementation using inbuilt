@@ -1,0 +1,10 @@
+import heapq # heapq represents min-heap in python  
+heap = [] 
+n = int(input()) # enter the no of ele 
+for _ in range(n):
+    num = int(input())
+    heapq.heappush(heap,num) 
+print(heap)
+print(heap[0])  # peek 
+print(heapq.heappop(heap)) 
+print(heap) 
